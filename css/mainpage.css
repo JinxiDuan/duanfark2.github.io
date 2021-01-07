@@ -1,0 +1,377 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+html,body{
+    margin:0px;
+    height:100%;
+}
+
+#spiner {
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url(../img/starter.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+#loadingTxt {
+    color: white;
+    font-size: 60px;
+    font-family: "微软雅黑";
+    font-weight: 800;
+    position: absolute;
+    right: 30%;
+    top: 70%;
+    border: 3px solid white;
+    padding: 5px;
+}
+
+#motobox {
+    position: absolute;
+    right: 10.5%;
+    top: 14%;
+    display: none;
+    width: 39%;
+    height: 25%;
+    border: 5px solid white;
+}
+
+#motoS {
+    font-family: "宋体";
+    font-size: 40px;
+    font-weight: 1000;
+    color: white;
+}
+
+#banner {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: 130px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+}
+
+#logo1 {
+    position: absolute;
+    top: 8%;
+    left: 5%;
+}
+
+.bannerCon {
+    z-index: 10;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+#Morett {
+    z-index: 20;
+    position: absolute;
+    left: 350px;
+    top: 85%;
+    width: 100px;
+    height: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: red;
+    color: rgb(255, 157, 0);
+    cursor: pointer;
+}
+
+.jtinCon {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.jtinCon:hover {
+    opacity: 1;
+}
+
+#leftjt {
+    position: absolute;
+    top: 45%;
+    z-index: 30;
+}
+
+#rightjt {
+    position: absolute;
+    top: 45%;
+    right: 0;
+    z-index: 30;
+}
+
+.banner {
+    position: relative;
+}
+
+#st1Txt {
+    position: absolute;
+    top: 21%;
+    right: 28%;
+    z-index: 999;
+    border-right: 2px solid white;
+    cursor: pointer;
+}
+
+#nd2Txt {
+    color: white;
+    font-size: 38px;
+    width: 370px;
+    position: absolute;
+    top: 63%;
+    right: 120px;
+    text-shadow: 1px 1px 0px black;
+    cursor: pointer;
+}
+
+#nd2Txt:hover {
+    text-decoration: underline;
+}
+
+.rd3Txt {
+    color: white;
+    position: absolute;
+    top: 83%;
+    right: 5%;
+    font-size: 35px;
+    text-shadow: 2px 2px 0px black;
+    cursor: pointer;
+}
+
+.rd3Txt:hover {
+    text-decoration: underline;
+}
+
+#st1Txt:hover>p {
+    border-right: 1px solid white;
+}
+
+.bannerContainer {
+    position: relative;
+}
+
+.bannerContainer li {
+    float: left;
+}
+
+.bannerContainer li img {
+    width: 100%;
+}
+
+.bannerTip {
+    position: absolute; 
+    top: 85%;
+    left: 75px;
+}
+
+.bannerTip .bannerUL {
+    text-align: center;
+}
+
+.bannerTip .bannerUL li {
+    /*float:left;*/
+    display: inline-block;
+    margin-right: 20px;
+    border-radius: 25%;
+    font-size: 20px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    color: white;
+    font-family: 'raleway';
+}
+
+.bannerTip .bannerUL li.active {
+    width: 52px;
+    border-radius: 8px;
+    background-color: red;
+    color: rgb(255, 157, 0);
+}
+
+#menu {
+    position: relative;
+    z-index: 40;
+    width: 100%;
+    height: 101%;
+    background: linear-gradient(#ED213A, #93291E);
+}
+
+
+#mainmenu {
+    margin: auto;
+    padding: 10% 0px;
+    width: 1270px;
+    height: 560px;
+}
+
+.boxMidlt {
+    float: left;
+    height: 560px;
+    width: 343.3px;
+    margin-right: 120px;
+    background-color: wheat;
+    position: relative;
+    border-radius: 5px;
+}
+
+#tvfglearn {
+    float: left;
+    height: 560px;
+    width: 343.3px;
+    border-radius: 5px;
+    background-color: wheat;
+    position: relative;
+}
+
+.insidebox {
+    position: relative;
+    border-radius: 5px;
+    z-index: 3;
+    height: 540px;
+    width: 323.3px;
+    padding: 10px;
+}
+
+#redchinA {
+    width: 200px;
+    height: 200px;
+    margin-top: 72px;
+    margin-left: 60px;
+    padding-bottom: 28px;
+    border-bottom: 3px solid #DC3545;
+}
+
+#Techicon {
+    margin-top: 74px;
+    margin-left: 70px;
+    padding-bottom: 12.5px;
+    border-bottom: 3px solid #DC3545;
+}
+
+.insidebox:hover {
+    box-shadow: rgba(54, 54, 54, 0.5) 5px 5px 3px 3px;
+    cursor: pointer;
+}
+
+.Txtinbox {
+    font-weight: 800;
+    line-height: 50px;
+    font-size: 30px;
+    color: darkred;
+    text-shadow: 1px 1px 0px white;
+}
+
+#Txtin1 {
+    margin-top: 30px;
+    margin-left: 68px;
+}
+#Txtin1:hover{
+	color: darkred;
+	text-decoration: underline;
+}
+
+#Txtin2 {
+    margin-top: 30px;
+    margin-left: 70px;
+}
+#Txtin2:hover{
+	color: darkred;
+	text-decoration: underline;
+}
+
+#Txtin3 {
+    margin-top: 30px;
+    margin-left: 90px;
+}
+#Txtin3:hover{
+	color: darkred;
+	text-decoration: underline;
+}
+
+.rightnav {
+    float: right;
+    margin-right: 100px;
+    height: 50px;
+}
+
+.nav ul {
+    padding: 0px;
+}
+
+.nav li {
+    list-style: none;
+    float: left;
+    width: 110px;
+    /* border-right: 1px solid white; */
+}
+
+.nav a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    line-height: 120px;
+    font-family: "微软雅黑";
+    text-align: center;
+}
+
+.nav>li:hover {
+    background: linear-gradient(rgba(179,18,23,0.8),rgba(229,45,39,0.8));
+}
+
+.nav>li {
+    float: left;
+    display: inline-block;
+    height: 120px;
+    font-size: 18px;
+    line-height: 120px;
+}
+
+.nav>li>ul {
+    width: 220px;
+    height: 0px;
+    overflow: hidden;
+    transition-property: height;
+    transition-duration: 0.5s;
+}
+
+.nav>li>ul>li,
+.nav>li>ul>li>a {
+    background-color: rgba(204, 0, 0, 1);
+    height: 60px;
+    line-height: 60px;
+    width: 200px;
+    text-align: left;
+    padding-left: 10px;
+    transition: 0.2s;
+}
+
+.nav>li>ul>li:hover,
+.nav>li>ul>li:hover>a {
+    background-color: white;
+    color: rgba(204, 0, 0, 1);
+}
+
+.nav>li:hover>ul {
+    height: 243px;
+    width: 220px;
+}
+
+#finalOne,
+#finalOne>a {
+    border-bottom: 3px solid rgb(255, 157, 0);
+}
